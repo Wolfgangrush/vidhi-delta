@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+# never commit working runs (private ledgers must not enter version control)
+run-*/
+*-out/
+# INTERNAL ONLY — design doctrine carries AAAK/opsec context (R5, CMA); stays local, never pushed to any cloud repo
+DOCTRINE-ai-disclosure-vs-R5.md

@@ -1,0 +1,25 @@
+{
+  "_comment": "Ground truth for the partial-with-trap benchmark. The firewall is graded two-sided, like the PII auditor: RECALL (catch every planted trap) + PRECISION (do not flag a single real citation as a trap).",
+  "verdict": "DO_NOT_FILE",
+  "traps": [
+    "(2099) 7 SCC 1200",
+    "(2015) 99 SCC 5",
+    "AIR 1850 SC 12"
+  ],
+  "flags_currency": [
+    "Section 302 IPC",
+    "Section 65B of the Evidence Act"
+  ],
+  "reals_must_be_unverified_never_trap": [
+    "(1978) 1 SCC 248",
+    "(2014) 10 SCC 473",
+    "(2020) 7 SCC 1",
+    "AIR 1973 SC 1461",
+    "2024 INSC 716"
+  ],
+  "proposition_trap": {
+    "_comment": "T3: a REAL citation carrying a FALSE proposition. Undetectable offline. The firewall must NOT pass it silently — it must mark it UNVERIFIED and surface the asserted proposition so the advocate catches the lie when he reads the case.",
+    "citation": "(2014) 10 SCC 473",
+    "proposition_contains": "certificate"
+  }
+}

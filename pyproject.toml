@@ -1,0 +1,29 @@
+[project]
+name = "vidhi-delta"
+version = "0.1.0a0"
+description = "Citation-verification filing firewall for Indian pleadings — measures the delta between asserted authority and verified authority, and refuses to bless a draft it cannot stand behind (Vidhi Likhit)."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Rushikesh R. Mahajan" }]
+keywords = ["legal", "india", "citations", "filing", "anti-hallucination", "rules-as-code", "vidhi-likhit"]
+# Dependencies: NONE. The deterministic core is stdlib-only so it runs fully
+# offline on any machine. .docx is read by unzipping it (stdlib zipfile), not by
+# python-docx — nothing to pip install, nothing to leak. (.pdf input shells out
+# to `pdftotext` if present; absence degrades gracefully.)
+dependencies = []
+license = { text = "PRIVATE — all rights reserved (RSH)" }
+
+# NOTE (decisions pending RSH):
+#   * Publishing brand  -> "Vidhi Likhit" family (sibling of nyaya-check, pramaan).
+#   * License           -> TBD. Until set, all rights reserved by the author.
+#   * No public release -> only after a clean leak/AAAK audit + an explicit go.
+
+[project.scripts]
+vidhi-delta = "vidhi_delta.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vidhi_delta*"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
