@@ -99,7 +99,7 @@ command instead of `python3 -m vidhi_delta.cli`.
 python3 -m vidhi_delta.cli check examples/sample_draft.md
 
 # 2) check a real .docx and write the working files
-python3 -m vidhi_delta.cli check ~/Desktop/AIO/SomeMatter/petition.docx --out run-01
+python3 -m vidhi_delta.cli check path/to/petition.docx --out run-01
 
 #    -> run-01/vidhi-ledger.txt        (PRIVATE — your desk only, never filed)
 #    -> run-01/list-of-authorities.txt (CLEAN  — finalise + sign this yourself)

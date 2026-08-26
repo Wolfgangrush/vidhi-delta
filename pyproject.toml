@@ -11,11 +11,11 @@ keywords = ["legal", "india", "citations", "filing", "anti-hallucination", "rule
 # python-docx — nothing to pip install, nothing to leak. (.pdf input shells out
 # to `pdftotext` if present; absence degrades gracefully.)
 dependencies = []
-license = { text = "PRIVATE — all rights reserved (RSH)" }
+license = { text = "MIT" }
 
 # NOTE (decisions pending RSH):
 #   * Publishing brand  -> "Vidhi Likhit" family (sibling of nyaya-check, pramaan).
-#   * License           -> TBD. Until set, all rights reserved by the author.
+#   * License           -> MIT (see LICENSE).
 #   * No public release -> only after a clean leak/AAAK audit + an explicit go.
 
 [project.scripts]
