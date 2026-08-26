@@ -310,7 +310,7 @@ python3 -m vidhi_delta.cli check tests/corpus/partial_with_trap.md ; echo "exit=
 
 ## 16. Licence & firewall
 
-- **Private.** All rights reserved (RSH). Not for distribution.
+- **MIT licensed.** Free to use, modify and redistribute — see `LICENSE`.
 - **No public release** without an explicit go and a clean leak/AAAK audit.
 - **Brand:** Vidhi Likhit. **Part of:** the nyaya-check / pramaan / Vidhi Likhit
   lawtech family.
